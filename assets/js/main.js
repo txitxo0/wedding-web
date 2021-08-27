@@ -425,10 +425,6 @@
 		   url: 'https://hooks.zapier.com/hooks/catch/2348540/o53fupq/',   
 		   data: formData
 		});
-	
-	    /*var message = $("#name").val() + " ha dicho que " + $("#confirmation").val() +" viene a la boda y serán " + $("#numberOfPerson").val() + " personas.\nHa dejado un mensaje\n" + $("#message").val();
-	    formData = [{"value1":$("#name").val()},{"value2":$("#confirmation").val()},{"value3":message}];
-	    formData = JSON.stringify(formData);*/
 		
 	    $.ajax({   
 		   //type: 'GET',   
@@ -442,6 +438,7 @@
 	
 	    form.send.value = "Enviado";
 	    $("#send").attr("disabled", true);
+		$("#sent-alert").removeAttr("style");
 	    return false;
 	  }
 	  return false;
@@ -450,4 +447,5 @@
   function resetForm(form){
   	$('#send').attr("disabled", false);
   	$('#send').attr("value","Enviar");
+	$("#sent-alert").attr("style", "display:none");
   }
