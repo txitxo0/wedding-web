@@ -439,6 +439,7 @@
 	    form.send.value = "Enviado";
 	    $("#send").attr("disabled", true);
 		$("#sent-alert").removeAttr("style");
+		$( "#sent-alert" ).slideUp( 5000 ).fadeOut( 10000 );
 	    return false;
 	  }
 	  return false;
@@ -449,3 +450,4 @@
   	$('#send').attr("value","Enviar");
 	$("#sent-alert").attr("style", "display:none");
   }
+
