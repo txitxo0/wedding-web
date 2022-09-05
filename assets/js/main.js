@@ -420,21 +420,21 @@
 	if($("#fax").is(':checked')){
 		console.log("You are a bot");
 	}else{
-	    $.ajax({   
-		   type: 'POST',   
-		   url: 'https://hooks.zapier.com/hooks/catch/2348540/o53fupq/',   
-		   data: formData
-		});
+// 	    $.ajax({   
+// 		   type: 'POST',   
+// 		   url: 'https://maker.ifttt.com/trigger/wedding_confirmation/with/key/dSN3JiREYP2wpCjV9B9MG5',   
+// 		   data: formData
+// 		});
 		
-	    $.ajax({   
-		   //type: 'GET',   
-		   //url: 'https://maker.ifttt.com/trigger/wedding_confirmation/with/key/dSN3JiREYP2wpCjV9B9MG5'
-		   type: 'POST',  
-		   dataType: 'json',
-	       contentType: 'application/json',
-		   data: JSON.stringify('{ "name": "' + $("#name").val() + '"}'), 
-		   url: 'http://txitxo0ha.duckdns.org:8123/api/webhook/wedding-assistance'
-		});
+// 	    $.ajax({   
+// 		   //type: 'GET',   
+// 		   //url: 'https://maker.ifttt.com/trigger/wedding_confirmation/with/key/dSN3JiREYP2wpCjV9B9MG5'
+// 		   type: 'POST',  
+// 		   dataType: 'json',
+// 	       contentType: 'application/json',
+// 		   data: JSON.stringify('{ "name": "' + $("#name").val() + '"}'), 
+// 		   url: 'https://maker.ifttt.com/trigger/wedding_confirmation/with/key/dSN3JiREYP2wpCjV9B9MG5'
+// 		});
 	
 	    form.send.value = "Enviado";
 	    $("#send").attr("disabled", true);
